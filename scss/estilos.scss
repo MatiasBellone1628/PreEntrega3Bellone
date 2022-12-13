@@ -1,0 +1,710 @@
+$background-color: (
+    to bottom,
+    blue,
+    yellow,
+    green
+);
+$title-color: rgb(241, 122, 10);
+$font-secundary: Arial, Helvetica, sans-serif;
+
+@mixin spaces ($width, $height) {
+    margin: $margin;
+    padding: $padding;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient($background-color);
+
+}
+
+.video {
+    text-align: center;
+}
+
+.nuevaseccion {
+    p {
+        margin: 35px 60px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    h2 {
+        font-family: $font-secundary;
+        text-align: center;
+        text-decoration: underline;
+        margin: 20px;
+    }
+}
+
+.imagenseccion {
+    text-align: center;
+    margin: 10px auto 30px auto;
+}
+
+
+/* titulo pagina principal */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: $title-color;
+    text-align: center;
+    font-size: 90px;
+    padding: auto;
+    margin: 40px;
+
+}
+
+.animate__rubberBand {
+    display: grid;
+    margin: 0 0.5rem;
+    padding: 20px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+/* menu de navegacion */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: aqua;
+}
+
+.navbar-brand {
+    color: blue;
+}
+
+button.navbar-toggler {
+    border-color: blueviolet;
+    border-style: dotted;
+    background-color: white;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+    color: $title-color;
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+.containerdonuts {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.containerdonuts {
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba (0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+    }
+
+    .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba (0, 0, 0, 0.2);
+    }
+
+    img {
+        width: 360px;
+
+    }
+
+}
+
+.containerdonuts {
+    .card {
+        p {
+            color: black;
+            @include spaces(10px, 10px);
+            font-size: 16px;
+            font-weight: 300;
+
+        }
+
+    }
+
+}
+
+@keyframes animate__heartBeat {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Formulario */
+.form__style {
+    width: 500px;
+    background: #333;
+    @include spaces(30px,30px );
+    border-radius: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: green;
+
+}
+
+.input__style {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(94, 94, 180);
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: beige;
+    font-size: 15px;
+    font-style: oblique;
+
+}
+
+.submit {
+    width: 100%;
+    background-color: rgb(224, 221, 26);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(34, 28, 20);
+    font-size: 18px;
+}
+
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: (4, auto);
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+
+
+}
+
+.container__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 10px;
+
+
+}
+
+
+.footer__tel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+
+    a {
+        color: blueviolet;
+        font-size: 20px;
+    }
+
+}
+
+.redes__sociales {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    justify-content: center;
+    font-size: 25px;
+    margin: 10px;
+    gap: 30px;
+
+    a {
+        background-color: blueviolet;
+        border-style: double;
+        color: black;
+        border-radius: 10px;
+
+        :hover {
+            background-color: rgb(59, 4, 160);
+        }
+    }
+
+}
+
+.container__footer {
+    div {
+        h2 {
+            font-family: $font-secundary;
+            color: white
+        }
+
+    }
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 60px;
+    }
+
+}
+
+p {
+    color: aliceblue;
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 50px 50px;
+
+}
+
+.nosotros {
+    img {
+        height: 400px;
+        border-radius: 50px;
+        margin: 50px;
+    }
+
+    p {
+        font-size: 35px;
+        color: black;
+        text-align: center;
+    }
+
+    span {
+        color: blue;
+        text-decoration: underline;
+
+    }
+
+}
+
+.titulofranquicia {
+    text-align: center;
+    border-style: dashed;
+    color: black;
+    margin: 25px;
+    background-image: url(Imagenes/fondoderretido.jpg);
+    background-size: contain;
+
+
+}
+
+.franquicias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+
+
+}
+
+.titulofranquicia {
+    h2 {
+        font-family: $font-secundary;
+        text-decoration: underline;
+        color: white;
+        margin: 20PX;
+        text-transform: uppercase;
+
+    }
+
+    div {
+        ul {
+            margin: 20px;
+            padding: 10px;
+        }
+
+    }
+
+}
+
+/* mapas*/
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    margin-top: 25px;
+
+    h3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+    }
+}
+
+
+.juegos {
+    img {
+        display: inline-block;
+        width: 400px;
+        height: 300px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 200px;
+
+    }
+
+}
+
+.titlejuegos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: underline;
+
+}
+
+@media only screen and (min-width:900px) and (max-width:1280px) {
+
+    /* responsive nuestra historia */
+    .nosotros {
+        display: block;
+        text-align: center;
+
+        img {
+            text-align: center;
+            width: 350px;
+            height: 350px;
+
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            padding: 15px;
+        }
+
+    }
+
+}
+
+
+@media only screen and (min-width:600px) and (max-width:899px) {
+
+    /* responsive index */
+    .grid__container {
+        header {
+            nav {
+                ul {
+                    li {
+                        float: none;
+                        display: inline-flex;
+                        position: relative;
+                        justify-content: right;
+
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .animate__rubberBand {
+        position: sticky;
+        animation: none;
+    }
+
+    iframe {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+    }
+
+
+    .footer {
+        width: 100%;
+        justify-content: space-between;
+        text-align: center;
+        background-color: black;
+
+    }
+
+    /* responsive variedades */
+
+    .p__style {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* responsive nuestra historia */
+    .nosotros {
+        display: block;
+        text-align: center;
+
+        img {
+            text-align: center;
+            width: 250px;
+            height: 250px;
+
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-size: 35px;
+            padding: 15px;
+        }
+
+    }
+
+    /* responsive locales */
+
+    .grid {
+
+        justify-content: space-evenly;
+        margin: 80px 80px;
+    }
+
+    .juegos {
+        margin-left: 25px;
+
+        img {
+            width: 250px;
+            height: auto;
+            justify-content: center;
+        }
+
+    }
+
+    .text__ubicacion {
+        display: none;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width:599px) {
+
+    html {
+        height: fit-content;
+    }
+
+    body {
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    /* responsive formulario */
+    .form__style {
+        width: fit-content;
+        margin: 20px;
+
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    /* responsive index  */
+
+    .animate__rubberBand {
+        position: sticky;
+        animation: none;
+        font-size: 40px;
+
+    }
+
+    iframe {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+    }
+
+    .grid__container {
+        width: fit-content;
+        height: auto;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 0;
+        gap: inherit;
+        justify-content: space-around;
+        text-align: center;
+        background-color: black;
+    }
+
+    .container__footer {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 10px;
+        font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+    }
+
+    .footer__tel {
+        float: left;
+        margin: 0;
+        padding: 0;
+
+        h2 {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+
+    }
+
+    h2 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .nuevaseccion {
+
+        p {
+            margin: 35px 70px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h2 {
+            font-family: $font-secundary;
+            text-align: center;
+            text-decoration: underline;
+            margin: 35px 70px;
+        }
+
+    }
+
+    .imagenseccion {
+        text-align: center;
+        margin: 10px auto 30px auto;
+
+        img {
+            width: fit-content;
+            height: 150px;
+        }
+    }
+
+
+    .redes__sociales {
+        float: inline-end;
+        position: sticky;
+        padding: 0;
+        font-size: 12px;
+        margin-top: 5px;
+        gap: 5px;
+    }
+
+    /* responsive variedades */
+
+    .img__style {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+    }
+
+    .p__style {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .containerdonuts {
+        width: 370px;
+
+    }
+
+    .card {
+        justify-content: center;
+    }
+
+    /* responsive nuestra historia */
+    .nosotros {
+        display: block;
+        text-align: center;
+
+        img {
+            text-align: center;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+    }
+
+    .titulofranquicia {
+        background-image: none;
+    }
+
+    .franquicias {
+        display: block;
+    }
+
+
+    /* responsive locales */
+
+    .grid {
+        justify-content: space-evenly;
+        margin: 50px 50px;
+    }
+
+    .juegos {
+        margin-left: 25px;
+
+        img {
+            width: 250px;
+            height: auto;
+            justify-content: center;
+        }
+
+    }
+
+    .text__ubicacion {
+        display: none;
+    }
+
+
+}
