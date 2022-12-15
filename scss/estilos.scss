@@ -159,7 +159,7 @@ button.navbar-toggler {
     justify-content: center;
     width: 500px;
     background: #333;
-    margin: 20 px auto;
+    margin: 30px auto;
     padding: 30px;
     border-radius: 35px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -487,12 +487,12 @@ p {
     }
 
     .juegos {
-        margin: auto 70px;
+        margin: 50px;
 
         img {
             display: flex;
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
             justify-content: center;
         }
     }
@@ -693,12 +693,13 @@ p {
     }
 
     .juegos {
-        margin: 30px;
+        margin: 50px;
 
         img {
             display: flex;
-            width: 50%;
-            height: 50%;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
             justify-content: center;
         }
     }
