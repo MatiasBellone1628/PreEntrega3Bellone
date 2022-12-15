@@ -7,6 +7,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(to bottom, blue, yellow, green);
 }
 
@@ -263,6 +265,9 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
+  margin: 40px 20px;
+  padding: 40px;
+
 }
 
 .titulofranquicia h2 {
@@ -291,6 +296,9 @@ p {
   font-size: 30px;
   color: black;
   text-align: center;
+}
+.juegos{
+  margin: 40px;
 }
 
 .juegos img {

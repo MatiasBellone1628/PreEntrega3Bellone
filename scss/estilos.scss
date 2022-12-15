@@ -18,6 +18,8 @@ $font-secundary: Arial, Helvetica, sans-serif;
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient($background-color);
 
 }
@@ -318,6 +320,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    margin: 40px 20px;
+    padding: 40px;
 
 
 }
@@ -360,6 +364,7 @@ p {
 
 
 .juegos {
+    margin: 40px;
     img {
         display: inline-block;
         width: 400px;
