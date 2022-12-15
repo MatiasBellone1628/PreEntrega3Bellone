@@ -313,11 +313,11 @@ p {
     justify-content: space-evenly;
     margin: 80px 80px; }
   .juegos {
-    margin: auto 70px; }
+    margin: 50px;}
     .juegos img {
       display: flex;
-      width: 50%;
-      height: 50%;
+      width: 100%;
+      height: 100%;
       justify-content: center; } }
 
 .text__ubicacion {
@@ -434,12 +434,15 @@ p {
     justify-content: space-evenly;
     margin: 50px 50px; }
   .juegos {
-    margin: 30px;}
+    margin: 50px;
+
+  }
+    
     .juegos img {
       display: flex;
       flex-direction: row;
-      width: 50%;
-      height: 50%;
+      width: 100%;
+      height: 100%;
       justify-content: center; }
   .text__ubicacion {
     display: none; } }
