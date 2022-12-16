@@ -298,18 +298,31 @@ p {
 
 }
 
+.titlecontent {
+    h3 {
+        justify-content: center;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        color: #ffffff;
+    }
+}
+
 .contenido {
     display: flex;
     flex-wrap: wrap;
+    gap: 25px;
     margin: 30px 30px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    border: 5px solid #eca407;
+    box-shadow: 25px 15px #3b04a0;
     perspective: 1000px;
 }
 
@@ -332,6 +345,7 @@ p {
 .flip-card-front,
 .flip-card-back {
     position: absolute;
+    border-radius: 25px;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
@@ -340,7 +354,7 @@ p {
 }
 
 .flip-card-front {
-    background-color: rgb(67, 37, 173);
+    background-color: rgb(224, 196, 34);
     text-shadow: 2px 2px #fafaf8;
     padding: 50px;
     color: black;
@@ -373,7 +387,9 @@ p {
 
 
 .juegos {
-    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     img {
         display: inline-block;
@@ -518,8 +534,6 @@ p {
     display: none;
 
 }
-
-
 
 @media only screen and (min-width:300px) and (max-width:599px) {
 
