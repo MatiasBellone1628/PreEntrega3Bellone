@@ -291,7 +291,7 @@ p {
   margin-top: 40px;
   text-decoration: underline; }
 
-@media only screen and (min-width: 900px) and (max-width: 1280px) {
+@media only screen and (min-width: 1000px) and (max-width: 1280px) {
   /* responsive nuestra historia */
   .nosotros {
     display: block;
@@ -306,7 +306,7 @@ p {
       font-size: 30px;
       padding: 15px; } }
 
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media only screen and (min-width: 600px) and (max-width: 999px) {
   /* responsive index */
   .grid__container header nav ul li {
     float: none;
@@ -346,6 +346,7 @@ p {
       padding: 15px; }
   /* responsive locales */
   .grid {
+    grid-template-columns: none;
     justify-content: space-evenly;
     margin: 80px 80px; }
   .juegos {
@@ -467,6 +468,7 @@ p {
     display: block; }
   /* responsive locales */
   .grid {
+    grid-template-columns: none;
     justify-content: space-evenly;
     margin: 50px 50px; }
   .juegos {

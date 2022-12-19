@@ -411,7 +411,7 @@ p {
 
 }
 
-@media only screen and (min-width:900px) and (max-width:1280px) {
+@media only screen and (min-width:1000px) and (max-width:1280px) {
 
     /* responsive nuestra historia */
     .nosotros {
@@ -437,7 +437,7 @@ p {
 }
 
 
-@media only screen and (min-width:600px) and (max-width:899px) {
+@media only screen and (min-width:600px) and (max-width:999px) {
 
     /* responsive index */
     .grid__container {
@@ -512,7 +512,7 @@ p {
     /* responsive locales */
 
     .grid {
-
+        grid-template-columns: none;
         justify-content: space-evenly;
         margin: 80px 80px;
     }
@@ -717,6 +717,7 @@ p {
     /* responsive locales */
 
     .grid {
+        grid-template-columns: none;
         justify-content: space-evenly;
         margin: 50px 50px;
     }
