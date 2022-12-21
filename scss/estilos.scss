@@ -101,8 +101,6 @@ button.navbar-toggler {
 }
 
 .containerdonuts {
-    width: 400px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
@@ -110,8 +108,9 @@ button.navbar-toggler {
 
 .containerdonuts {
     .card {
+        background: #9ff11b;
         border-radius: 10px;
-        box-shadow: 0 2px 2px rgba (0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px rgba 0, 0, 0, 0.2;
         overflow: hidden;
         margin: 20px;
         text-align: center;
@@ -124,7 +123,9 @@ button.navbar-toggler {
     }
 
     img {
-        width: 360px;
+        justify-items: center;
+        margin: 0 auto;
+        width: 350px;
 
     }
 
@@ -134,11 +135,17 @@ button.navbar-toggler {
     .card {
         p {
             color: black;
-            margin: 10px;
             padding: 10px;
-            font-size: 16px;
+            font-size: 50px;
             font-weight: 300;
 
+        }
+
+        h4 {
+            margin: 15px;
+            font-size: 50px;
+            width: auto;
+            height: 50px;
         }
 
     }
@@ -676,13 +683,22 @@ p {
     }
 
     .containerdonuts {
-        width: 370px;
+        width: auto;
 
     }
 
     .card {
         justify-content: center;
+
+        p {
+            margin: 10px 10px;
+            padding: 40px;
+            font-size: 30px;
+            justify-content: flex-start;
+
+        }
     }
+
 
     /* responsive nuestra historia */
     .nosotros {
