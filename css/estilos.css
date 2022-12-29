@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -10,15 +11,18 @@ body {
   height: 100%;
   background: url(../PreEntrega3BelloneMatias/Imagenes/donafondo.jpeg);
   background-repeat: repeat;
-  background-size: 33%; }
+  background-size: 33%;
+}
 
 .video {
-  text-align: center; }
+  text-align: center;
+}
 
 .nuevaseccion p {
   margin: 35px 60px;
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+}
 
 .nuevaseccion h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -26,11 +30,13 @@ body {
   text-align: center;
   text-decoration: underline;
   margin: 20px;
-  font-size: 35px; }
+  font-size: 35px;
+}
 
 .imagenseccion {
   text-align: center;
-  margin: 10px auto 30px auto; }
+  margin: 10px auto 30px auto;
+}
 
 /* titulo pagina principal */
 h1 {
@@ -39,42 +45,50 @@ h1 {
   text-align: center;
   font-size: 90px;
   padding: auto;
-  margin: 40px; }
+  margin: 40px;
+}
 
 .animate__rubberBand {
   display: grid;
   margin: 0 0.5rem;
   padding: 20px;
   animation-duration: 2s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+}
 
 /* menu de navegacion */
 .navbar-nav .nav-link.active,
-.navbar-nav .show > .nav-link {
-  color: white; }
+.navbar-nav .show>.nav-link {
+  color: white;
+}
 
 .navbar-nav .nav-link.active:hover {
-  color: aqua; }
+  color: aqua;
+}
 
 .navbar-brand {
-  color: blue; }
+  color: blue;
+}
 
 button.navbar-toggler {
   border-color: blueviolet;
   border-style: dotted;
-  background-color: white; }
+  background-color: white;
+}
 
 .title {
   text-align: center;
   font-size: 80px;
   color: #f17a0a;
   margin-top: 100px;
-  font-weight: 100; }
+  font-weight: 100;
+}
 
 .containerdonuts {
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto; }
+  margin: auto;
+}
 
 .containerdonuts .card {
   background: #9ff11b;
@@ -83,34 +97,43 @@ button.navbar-toggler {
   overflow: hidden;
   margin: 20px;
   text-align: center;
-  transition: all 0.25s; }
+  transition: all 0.25s;
+}
 
 .containerdonuts .card:hover {
   transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba 0, 0, 0, 0.2; }
+  box-shadow: 0 12px 16px rgba 0, 0, 0, 0.2;
+}
 
 .containerdonuts img {
   justify-items: center;
   margin: 0 auto;
-  width: 350px; }
+  width: 350px;
+}
 
 .containerdonuts .card p {
   color: black;
   padding: 10px;
   font-size: 50px;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 .containerdonuts .card h4 {
   margin: 15px;
   font-size: 50px;
   width: auto;
-  height: 50px; }
+  height: 50px;
+}
 
 @keyframes animate__heartBeat {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 /* Formulario */
 .form__style {
@@ -122,18 +145,21 @@ button.navbar-toggler {
   border-radius: 35px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 25px;
-  color: green; }
+  color: green;
+}
 
 .input__style {
   width: 100%;
   padding: 10px;
   background-color: #5e5eb4;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 ::placeholder {
   color: beige;
   font-size: 15px;
-  font-style: oblique; }
+  font-style: oblique;
+}
 
 .submit {
   width: 100%;
@@ -142,28 +168,34 @@ button.navbar-toggler {
   padding: 10px;
   margin: 5px;
   color: #221c14;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 /* footer */
 .footer {
   justify-content: space-between;
   text-align: center;
-  background-color: black; }
+  background-color: black;
+}
 
 .container__footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-evenly;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .footer__tel {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-left: 20px; }
-  .footer__tel a {
-    color: blueviolet;
-    font-size: 20px; }
+  margin-left: 20px;
+}
+
+.footer__tel a {
+  color: blueviolet;
+  font-size: 20px;
+}
 
 .redes__sociales {
   display: grid;
@@ -171,65 +203,81 @@ button.navbar-toggler {
   justify-content: center;
   font-size: 25px;
   margin: 10px;
-  gap: 30px; }
-  .redes__sociales a {
-    background-color: blueviolet;
-    border-style: double;
-    color: black;
-    border-radius: 10px; }
-    .redes__sociales a :hover {
-      background-color: #3b04a0; }
+  gap: 30px;
+}
+
+.redes__sociales a {
+  background-color: blueviolet;
+  border-style: double;
+  color: black;
+  border-radius: 10px;
+}
+
+.redes__sociales a :hover {
+  background-color: #3b04a0;
+}
 
 .container__footer div h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: white; }
+  color: white;
+}
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; }
-  .logo img {
-    width: 60px; }
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+}
 
 p {
-  color: #f0f1f0; }
+  color: #f0f1f0;
+}
 
 .nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
-  padding: 50px 50px; }
+  padding: 50px 50px;
+}
 
 .nosotros img {
   justify-content: space-evenly;
   height: 400px;
   border-radius: 50px;
-  margin: 50px; }
+  margin: 50px;
+}
 
 .nosotros p {
   font-size: 35px;
   color: #fdfdfd;
   margin: 20px;
   padding: 20px;
-  text-align: center; }
+  text-align: center;
+}
 
 .nosotros span {
   color: blue;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .titlecontent h3 {
   justify-content: center;
   text-align: center;
   font-family: impact;
   font-size: 50px;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .contenido {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   margin: 30px 30px;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .flip-card {
   background-color: transparent;
@@ -238,7 +286,8 @@ p {
   border-radius: 25px;
   border: 5px solid #eca407;
   box-shadow: 25px 15px #3b04a0;
-  perspective: 1000px; }
+  perspective: 1000px;
+}
 
 .flip-card-inner {
   position: relative;
@@ -246,10 +295,12 @@ p {
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+}
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+}
 
 .flip-card-front,
 .flip-card-back {
@@ -258,72 +309,92 @@ p {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 .flip-card-front {
   background-color: #e0c422;
   text-shadow: 2px 2px #fafaf8;
   padding: 50px;
-  color: black; }
+  color: black;
+}
 
 .flip-card-back {
   background-color: #010408;
   color: white;
   transform: rotateY(180deg);
   padding: 30px 0;
-  justify-content: left; }
+  justify-content: left;
+}
 
 /* mapas*/
 .grid {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-around;
-  margin-top: 25px; }
+  margin-top: 25px;
+}
 
 .juegos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
-  .juegos img {
-    display: inline-block;
-    width: 350px;
-    height: 300px;
-    margin: 30px;
-    padding: 20px;
-    border-radius: 200px; }
+  justify-content: center;
+}
+
+.juegos img {
+  display: inline-block;
+  width: 350px;
+  height: 300px;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 200px;
+}
 
 .titlejuegos {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fafaf8;
   text-align: center;
   margin-top: 40px;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 @media only screen and (min-width: 1000px) and (max-width: 1280px) {
+
   /* responsive nuestra historia */
   .nosotros {
     display: block;
-    text-align: center; }
-    .nosotros img {
-      text-align: center;
-      width: 350px;
-      height: 350px; }
-    .nosotros p {
-      color: #fafaf8;
-      text-align: center;
-      font-size: 30px;
-      padding: 15px; } }
+    text-align: center;
+  }
+
+  .nosotros img {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+  }
+
+  .nosotros p {
+    color: #fafaf8;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+  }
+}
 
 @media only screen and (min-width: 600px) and (max-width: 999px) {
+
   /* responsive index */
   .grid__container header nav ul li {
     float: none;
     display: inline-flex;
     position: relative;
-    justify-content: right; }
+    justify-content: right;
+  }
+
   .animate__rubberBand {
     position: sticky;
-    animation: none; }
+    animation: none;
+  }
+
   iframe {
     position: relative;
     margin: 40px;
@@ -331,78 +402,113 @@ p {
     top: 0;
     left: 0;
     width: 90%;
-    height: 100%; }
+    height: 100%;
+  }
+
   .footer {
     width: 100%;
     justify-content: space-between;
     text-align: center;
-    background-color: black; }
+    background-color: black;
+  }
+
   /* responsive variedades */
   .p__style {
     font-size: 20px;
-    text-align: left; }
+    text-align: left;
+  }
+
   /* responsive nuestra historia */
   .nosotros {
     display: block;
-    text-align: center; }
-    .nosotros img {
-      text-align: center;
-      width: 250px;
-      height: 250px; }
-    .nosotros p {
-      color: #fafaf8;
-      text-align: center;
-      font-size: 35px;
-      padding: 15px; }
+    text-align: center;
+  }
+
+  .nosotros img {
+    text-align: center;
+    width: 250px;
+    height: 250px;
+  }
+
+  .nosotros p {
+    color: #fafaf8;
+    text-align: center;
+    font-size: 35px;
+    padding: 15px;
+  }
+
   /* responsive locales */
   .grid {
     grid-template-columns: none;
     justify-content: space-evenly;
-    margin: 80px 80px; }
+    margin: 80px 80px;
+  }
+
   .juegos {
-    margin: 50px; }
-    .juegos img {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      justify-content: center; } }
+    margin: 50px;
+  }
+
+  .juegos img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+}
 
 .text__ubicacion {
-  display: none; }
+  display: none;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 599px) {
   html {
-    height: fit-content; }
+    height: fit-content;
+  }
+
   body {
     margin: 10px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+  }
+
   /* responsive formulario */
   .form__style {
     width: fit-content;
-    margin: 20px; }
+    margin: 20px;
+  }
+
   h1 {
-    font-size: 50px; }
+    font-size: 50px;
+  }
+
   /* responsive index  */
   .animate__rubberBand {
     position: sticky;
     animation: none;
-    font-size: 40px; }
+    font-size: 40px;
+  }
+
   iframe {
     position: relative;
     top: 0;
     left: 0;
     width: 90%;
-    height: 100%; }
+    height: 100%;
+  }
+
   .grid__container {
     width: fit-content;
-    height: auto; }
+    height: auto;
+  }
+
   .footer {
     margin: 0;
     padding: 0;
     gap: inherit;
     justify-content: space-around;
     text-align: center;
-    background-color: black; }
+    background-color: black;
+  }
+
   .container__footer {
     display: block;
     color: #fff;
@@ -413,100 +519,150 @@ p {
     padding: 10px;
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+  }
+
   .footer__tel {
     float: left;
     margin: 0;
-    padding: 0; }
-    .footer__tel h2 {
-      font-size: 12px;
-      margin-top: 5px; }
-    .footer__tel a {
-      font-size: 12px; }
+    padding: 0;
+  }
+
+  .footer__tel h2 {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .footer__tel a {
+    font-size: 12px;
+  }
+
   h2 {
     font-size: 12px;
-    margin-top: 5px; }
+    margin-top: 5px;
+  }
+
   .nuevaseccion p {
     margin: 35px 70px;
     text-align: justify;
-    font-size: 25px; }
+    font-size: 25px;
+  }
+
   .nuevaseccion h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: underline;
-    margin: 35px 70px; }
+    margin: 35px 70px;
+  }
+
   .imagenseccion {
     text-align: center;
-    margin: 10px auto 30px auto; }
-    .imagenseccion img {
-      width: fit-content;
-      height: 150px; }
+    margin: 10px auto 30px auto;
+  }
+
+  .imagenseccion img {
+    width: fit-content;
+    height: 150px;
+  }
+
   .redes__sociales {
     float: inline-end;
     position: sticky;
     padding: 0;
     font-size: 12px;
     margin-top: 5px;
-    gap: 5px; }
+    gap: 5px;
+  }
+
   /* responsive variedades */
   .img__style img {
     width: 100px;
-    height: 100px; }
+    height: 100px;
+  }
+
   .p__style {
     font-size: 15px;
-    text-align: left; }
+    text-align: left;
+  }
+
   .containerdonuts img {
     justify-items: center;
     margin: 0 auto;
-    width: 250px; }
+    width: 250px;
+  }
+
   .containerdonuts .card p {
     color: black;
     padding: 10px;
     margin-top: 10px;
     font-size: 30px;
-    font-weight: 300; }
+    font-weight: 300;
+  }
+
   .containerdonuts .card h4 {
     margin: 15px;
     font-size: 40px;
     width: auto;
-    height: 50px; }
+    height: 50px;
+  }
+
   /* responsive nuestra historia */
   .nosotros {
     display: block;
-    text-align: center; }
-    .nosotros img {
-      text-align: center;
-      width: 200px;
-      height: 200px; }
-    .nosotros p {
-      color: #fafaf8;
-      text-align: center;
-      font-size: 20px;
-      padding: 15px; }
+    text-align: center;
+  }
+
+  .nosotros img {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+  }
+
+  .nosotros p {
+    color: #fafaf8;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+  }
+
   .titulofranquicia {
-    background-image: none; }
+    background-image: none;
+  }
+
   .franquicias {
-    display: block; }
+    display: block;
+  }
+
   /* responsive locales */
   .grid {
     grid-template-columns: none;
     justify-content: space-evenly;
-    margin: 50px 50px; }
-    .grid iframe {
-      position: relative;
-      margin: 20px;
-      padding: 40px;
-      top: 0;
-      left: 0;
-      width: 90%;
-      height: 100%; }
+    margin: 50px 50px;
+  }
+
+  .grid iframe {
+    position: relative;
+    margin: 20px;
+    padding: 40px;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+  }
+
   .juegos {
-    margin: 50px; }
-    .juegos img {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 100%;
-      justify-content: center; }
+    margin: 50px;
+  }
+
+  .juegos img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
   .text__ubicacion {
-    display: none; } }
+    display: none;
+  }
+}
