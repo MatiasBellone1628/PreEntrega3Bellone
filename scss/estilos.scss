@@ -664,6 +664,12 @@ p {
     }
 
     /* responsive variedades */
+    .title {
+        text-align: center;
+        font-size: 60px;
+        color: $title-color;
+        margin-top: 100px;
+        font-weight: 100; }
 
     .img__style {
         img {
@@ -714,12 +720,13 @@ p {
             text-align: center;
             width: 200px;
             height: 200px;
+            margin: 20px;
 
         }
 
         p {
             color: #fafaf8;
-            text-align: center;
+            text-align: justify;
             font-size: 20px;
             padding: 15px;
         }
